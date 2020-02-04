@@ -163,13 +163,54 @@ img {
   max-width: 100%;
   height: auto;
 }
-nav {
-  background-color: #F3F4F3;
-  padding: 20px;
-  margin: 10px;
-  border: 5px;
-}
-nav a {
+.nav .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 2rem;
+  font: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.nav .menu .menuItem {
   text-decoration: none;
+  text-decoration-color: black;
+  font: #000000;
+  padding: 0 20px 0 20px;
+}
+.nav .menu .fa,
+.nav .menu .far,
+.nav .menu .fas {
+  font-family: "Font Awesome 5 Pro";
+  text-decoration-color: black;
+}
+.home-page #heroTitle {
+  position: absolute;
+  right: 575px;
+  bottom: 300px;
+}
+.button {
+  position: absolute;
+  right: 725px;
+  bottom: 200px;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #E6B609;
+  margin: 2px solid yellow;
+}
+h2 {
+  position: absolute;
+  right: 600px;
+  bottom: 100px;
+}
+.article .missionStmt {
+  font-size: 4rem;
+  text-align: center;
+}
+.article .missionStmt #mission {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
 }
