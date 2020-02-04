@@ -205,12 +205,22 @@ h2 {
   right: 600px;
   bottom: 100px;
 }
-.article .missionStmt {
+article.article h3.missionStmt {
   font-size: 4rem;
   text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
-.article .missionStmt #mission {
+p#mission {
   text-align: center;
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+}
+div.cardWrapper {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  flex-direction: row;
+  align-self: flex-start;
 }
