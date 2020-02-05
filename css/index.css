@@ -163,9 +163,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+nav.nav {
+  position: static;
+}
 .nav .menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font: #000000;
@@ -177,17 +180,16 @@ img {
   text-decoration-color: black;
   font: #000000;
   padding: 0 20px 0 20px;
+  justify-content: center;
 }
-.nav .menu .fa,
-.nav .menu .far,
-.nav .menu .fas {
-  font-family: "Font Awesome 5 Pro";
-  text-decoration-color: black;
+.nav .menu #logo {
+  width: 80px;
+  height: auto;
 }
 .home-page #heroTitle {
   position: absolute;
-  right: 575px;
-  bottom: 300px;
+  right: 600px;
+  bottom: 125px;
 }
 .button {
   position: absolute;
@@ -197,7 +199,7 @@ img {
   font-family: "Roboto", sans-serif;
   padding: 20px;
   border-radius: 15px;
-  background-color: #E6B609;
+  background-color: #F3F4F3;
   margin: 2px solid yellow;
 }
 h2 {
@@ -219,8 +221,9 @@ p#mission {
 }
 div.cardWrapper {
   display: flex;
-  width: 600px;
-  margin: 0 auto;
-  flex-direction: row;
-  align-self: flex-start;
+  width: 635px;
+}
+.card {
+  align-items: center;
+  justify-items: center;
 }
