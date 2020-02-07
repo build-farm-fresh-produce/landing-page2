@@ -226,11 +226,18 @@ p#mission {
   font-family: "Roboto", sans-serif;
   padding-bottom: 50px;
 }
-div.cardWrapper {
+.article div.cardWrapper {
   display: flex;
-  width: 635px;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: auto;
 }
 .card {
-  align-items: center;
-  justify-items: center;
+  justify-content: center;
+}
+footer > p {
+  font-size: 3rem;
+  width: 60%;
 }

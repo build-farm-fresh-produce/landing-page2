@@ -27,19 +27,7 @@ h2 {
     bottom: 450px; 
 }
 
-// .home-page #heroTitle {
-//     position: absolute;
-//     right: 800px; 
-//     bottom: 205px; 
-    
-// }
 
-
-// h2 {
-//     position: absolute; 
-//     right: 700px; 
-//     bottom: 150px; 
-// }
 
 article.article h3.missionStmt { 
     font-size: 4rem; 
@@ -56,14 +44,23 @@ p#mission {
     
 }
 
-div.cardWrapper {
-    display: flex;  
-    width: 635px;  
-    
+.article div.cardWrapper {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: auto;  
     
 }
 
 .card{
-    align-items: center;
-    justify-items: center;
+    
+    justify-content: center;
+}
+
+footer >p {
+    font-size: 3rem;
+    width: 60%;
+    
 }
