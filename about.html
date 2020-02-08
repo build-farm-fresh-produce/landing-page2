@@ -3,31 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Lambda</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <title>Farm Fresh</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Lato&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <h1>Lorem</h1>
+        <h1>About</h1>
         <nav>
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Loris</a>
-            <a href="#">Ipsum</a>
+            <!-- <a href="#">About</a> -->
+            <a href="#">Farmer</a>
+            <a href="#">Shopper</a>
          </nav>
     </header>
     <main>
-        <h2>Lorem ipsum</h2>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/imgs/familyTalk.png" style="width:100%">
+          <div class="text">Up Strong</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/imgs/OutdoorFamily.png" style="width:100%">
+          <div class="text">Together</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/imgs/coolGrand.png" style="width:100%">
+          <div class="text">in style</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <h2>It's our mission to help you grow</h2>
         <section>
             
-                <h3>Lorem ipsum, dolor</h3>
-                <img src="" alt="">
-                <span class="CTAbutton">CTA Button</span>
-        
+                <h3>We are developers seeking to make a virtual impact on your health.</h3>
+                <img src="/imgs/MomentsGrand.jpg" alt="Elder taking a picture with a camera">
+                <span class="CTAbutton">Make More Moments</span>
+        <img src="/imgs/familyDinner.jpg"alt="family dinner"
         </section>
         <section>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam id molestias autem, maiores accusamus error eius modi excepturi ipsam, velit pariatur. Exercitationem placeat soluta excepturi nihil, tempora autem nemo accusamus.
+                We only get one chance to make a healthy choice.    
             </p>
         </section>
     </main>
