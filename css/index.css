@@ -225,6 +225,8 @@ p#mission {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
   padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 .article div.cardWrapper {
   display: flex;
@@ -240,4 +242,11 @@ p#mission {
 footer > p {
   font-size: 3rem;
   width: 60%;
+}
+.growH2 {
+  color: darkslategrey;
+  font-weight: bolder;
+}
+main.aboutMain div.mySlides {
+  padding-left: 450px;
 }
