@@ -8,18 +8,20 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Lato&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body onload="showSlides(slideIndex = 1)">
     <header>
-        <h1>About</h1>
+        <h1 class="titleAbout">About</h1>
         <nav class="aboutNav">
-            <a href="index.html">Home</a>
+          <div class="menu">
+            <a href="index.html" class="menuItem">Home</a>
             <!-- <a href="#">About</a> -->
-            <a href="#">Farmer</a>
-            <a href="#">Shopper</a>
+            <a href="#" class="menuItem">Farmer</a>
+            <a href="#" class="menuItem">Shopper</a>
+          </div>
          </nav>
     </header>
     <main class="aboutMain">
-      <div class="slideshow-container">
+      <!-- <div class="slideshow-container">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -37,19 +39,19 @@
           <div class="numbertext">3 / 3</div>
           <img src="/imgs/coolGrand.png" style="width:100%">
           <div class="text">in style</div>
-        </div>
+        </div> -->
         
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
+        <h2>It's our mission to help you grow</h2>
         </div>
-        <br>
+        <br> -->
         
-        <div style="text-align:center">
+        <!-- <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+        </div> -->
         
         <script>
         var slideIndex = 1;
@@ -79,22 +81,125 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
-        <h2>It's our mission to help you</h2><h2 class="growH2">grow</h2>
+        <!-- <h2>It's our mission to help you</h2> <br> <h2 class="growH2">grow</h2> -->
         <section class="aboutSection">
             
                 <h3>We are developers seeking to make a virtual impact on your health.</h3>
-                <img src="/imgs/MomentsGrand.jpg" alt="Elder taking a picture with a camera">
-                <span class="CTAbutton">Make More Moments</span>
-        <img src="/imgs/familyDinner.jpg"alt="family dinner"
+                  <div class="loWrap">
+                    <img src="/imgs/MomentsGrand.png" alt="Elder taking a picture with a camera">
+                   </div>    
+                <div class="CTAbutton">Make More Moments</div>
         </section>
-        <section>
-            <p>
-                We only get one chance to make a healthy choice.    
-            </p>
-        </section>
+        
     </main>
     <footer>
+      <h4>Brought to you by:</h4>   
+
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 9</div>
+          <img src="/imgs/Aaron-Mendez-UX.jpg" style="width:100%">
+          <div class="text">Aaron M-UX Developer</div>
+        </div>
         
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 9</div>
+          <img src="/imgs/Ryan-M-UX.jpg" style="width:100%">
+          <div class="text">Ryan M-UX Developer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 9</div>
+          <img src="/imgs/Ramona-LuciusUX.jpg" style="width:100%">
+          <div class="text">Ramona L-UX Developer</div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 9</div>
+          <img src="/imgs/Joshua-Humphrey-FrontEnd.jpg" style="width:100%">
+          <div class="text">Joshua H-Front End Developer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 9</div>
+          <img src="/imgs/Jane-Suh-FrontEnd.jpg" style="width:100%">
+          <div class="text">Jane S-Font End Developer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 9</div>
+          <img src="/imgs/JacobV-FrontEnd.png" style="width:100%">
+          <div class="text">Jacob V- Front End Developer</div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 9</div>
+          <img src="/imgs/Adella-KFrontEnd.jpg" style="width:100%">
+          <div class="text">Adella K- Front End Developer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 9</div>
+          <img src="/imgs/Charlie-BackEnd.jpg" style="width:100%">
+          <div class="text">Charlie M-Back End Developer</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 9</div>
+          <img src="/imgs/Amanda-Lane-Manager.jpg" style="width:100%">
+          <div class="text">Amanda L- Project Manager</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- <h2>It's our mission to help you grow</h2> -->
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span> 
+          <span class="dot" onclick="currentSlide(9)"></span>  
+        </div>
+        
+        <!-- <script>
+        var slideIndexB = 1;
+        showSlidesB(slideIndexB);
+        
+        function plusSlidesB(n) {
+          showSlidesB(slideIndexB += n);
+        }
+        
+        function currentSlideB(n) {
+          showSlidesB(slideIndexB = n);
+        }
+        
+        function showSlidesB(n) {
+          var i;
+          var slidesB = document.getElementsByClassName("mySlidesB");
+          var dotsB = document.getElementsByClassName("dotB");
+          if (n > slidesB.length) {slideIndexB = 1}    
+          if (n < 1) {slideIndexB = slides.length}
+          for (i = 0; i < slidesB.length; i++) {
+              slidesB[i].style.display = "none";  
+          }
+          for (i = 0; i < dotsB.length; i++) {
+              dotsB[i].className = dotsB[i].className.replace(" active", "");
+          }
+          slidesB[slideIndexB-1].style.display = "block";  
+          dotsB[slideIndeBx-1].className += " active";
+        }
+        </script>   -->
     </footer>
   </body>
 </html>
