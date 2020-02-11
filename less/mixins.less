@@ -1,6 +1,14 @@
-.flexbox(){
-    display: flex;
+.custFlex (@x, @y){
+    display: flex; 
+    justify-content: @x;
+    align-content: @y; 
 }
+
+.flexCenter(){
+    display: flex; 
+    justify-content: center;
+}
+
 
 .placement (x,y){
     justify-items: x;
